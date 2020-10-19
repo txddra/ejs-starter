@@ -24,6 +24,6 @@ router.get('/loop',(req, res)=>{
     {city:'New York', state:'NY'},
     {city:'Newark', state:'NJ'}
   ];
-  return res.render('index', {myPlaces:places});
+  return res.render('main/index', {myPlaces:places});
 })
 module.exports = router;
