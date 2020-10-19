@@ -6,11 +6,14 @@
     <title>EJS intro</title>
 </head>
 <body>
-<% let obj = {name:'JD', color: 'blue'}%>
-    <h1>Hello <%=obj.name %>. My favorite color is <%= obj.color%>.</h1>
 
-    <p>My dog's name is <%= myDog %> and my cat's name is <%=myCat%></p>
+<ul>
 
-    <p>I just bought a new <%= myCar%></p>
+    <%myPlaces.forEach(item => { %>
+<li><%=item.city%>, <%=item.state%></li>
+
+        
+   <% })%>
+</ul>
 </body>
 </html>
