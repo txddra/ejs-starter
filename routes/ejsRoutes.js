@@ -25,5 +25,10 @@ router.get('/loop',(req, res)=>{
     {city:'Newark', state:'NJ'}
   ];
   return res.render('main/index', {myPlaces:places});
+});
+
+
+router.get('/about',(req, res)=>{
+  return res.render('main/about')
 })
 module.exports = router;
