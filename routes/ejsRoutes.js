@@ -10,9 +10,10 @@ res.render('index');
 
 
 router.get('/p/:dog/:cat',(req, res)=>{
-let dog= req.params.dog;
+let car = req.query.search;
+  let dog= req.params.dog;
 let cat = req.params.cat;
 
-return res.render('index',{myDog: dog, myCat: cat});
+return res.render('index',{myDog: dog, myCat: cat, myCar: car});
 })
 module.exports = router;
